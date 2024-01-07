@@ -17,13 +17,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane prefHeight="447.0" prefWidth="323.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ClientFormController">
+<AnchorPane id="bg" prefHeight="498.0" prefWidth="335.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ClientFormController">
     <children>
-        <TextField fx:id="txtTyping" layoutX="73.0" layoutY="390.0" onAction="#entersend" prefHeight="31.0" prefWidth="166.0" style="-fx-background-radius: 20px;">
+        <TextField fx:id="txtTyping" layoutX="12.0" layoutY="452.0" onAction="#entersend" prefHeight="31.0" prefWidth="248.0" style="-fx-background-radius: 20px;">
             <cursor>
                 <Cursor fx:constant="TEXT" />
             </cursor></TextField>
-        <ImageView accessibleRole="BUTTON" fitHeight="25.0" fitWidth="23.0" layoutX="13.0" layoutY="394.0" onMouseClicked="#ImageMouseClicked" pickOnBounds="true" preserveRatio="true">
+        <ImageView accessibleRole="BUTTON" fitHeight="25.0" fitWidth="23.0" layoutX="226.0" layoutY="457.0" onMouseClicked="#ImageMouseClicked" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../Assets/Images/cam.png" />
             </image>
@@ -31,31 +31,23 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </ImageView>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff21cc" height="51.0" layoutY="-6.0" stroke="WHITE" strokeType="INSIDE" width="316.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3a4d53" height="48.0" layoutX="-364.0" layoutY="101.0" stroke="WHITE" strokeType="INSIDE" width="335.0" />
         <Label fx:id="userName" layoutX="63.0" layoutY="11.0" textFill="WHITE">
             <font>
-                <Font name="System Bold" size="12.0" />
+                <Font name="System Bold" size="14.0" />
             </font>
         </Label>
-        <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="13.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../Assets/Images/User_ico.png" />
             </image>
         </ImageView>
-        <Label layoutX="53.0" layoutY="25.0" text="Online" textFill="WHITE">
+        <Label layoutX="62.0" layoutY="31.0" text="Online" textFill="WHITE">
             <font>
                 <Font name="System Italic" size="12.0" />
             </font>
         </Label>
-        <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="47.0" layoutY="394.0" onMouseClicked="#EmojiOnAction" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@../Assets/Images/Imoji.png" />
-            </image>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
-        </ImageView>
-        <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="250.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="281.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../Assets/Images/call.png" />
             </image>
@@ -63,11 +55,11 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </ImageView>
-        <ScrollPane layoutX="4.0" layoutY="41.0" prefHeight="324.0" prefWidth="304.0">
+        <ScrollPane layoutX="6.0" layoutY="59.0" prefHeight="384.0" prefWidth="323.0">
             <content>
-                <VBox fx:id="vbox_messages" prefHeight="322.0" prefWidth="302.0">
+                <VBox fx:id="vbox_messages" prefHeight="363.0" prefWidth="314.0" stylesheets="@style.css">
                     <children>
-                        <HBox prefHeight="100.0" prefWidth="200.0">
+                        <HBox prefHeight="94.0" prefWidth="312.0">
                             <children>
                                 <TextFlow prefHeight="62.0" prefWidth="300.0" />
                             </children>
@@ -81,7 +73,10 @@
                 <Image url="@../Assets/Images/02.gif" />
             </image>
         </ImageView>
-        <Button fx:id="btn_send" layoutX="240.0" layoutY="390.0" mnemonicParsing="false" onAction="#sendmsgOnAction" prefHeight="31.0" prefWidth="64.0" text="send" />
+        <Button id="but" fx:id="btn_send" layoutX="265.0" layoutY="454.0" mnemonicParsing="false" onAction="#sendmsgOnAction" prefHeight="23.0" prefWidth="61.0" stylesheets="@style.css" text="send">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
         <AnchorPane fx:id="EmojiPane" layoutX="15.0" layoutY="188.0" prefHeight="174.0" prefWidth="141.0" visible="false">
             <children>
                 <GridPane alignment="CENTER" hgap="5.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="160.0" prefWidth="135.0" vgap="7.0">
@@ -222,6 +217,14 @@
                 </GridPane>
             </children>
         </AnchorPane>
+        <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="199.0" layoutY="457.0" onMouseClicked="#EmojiOnAction" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Assets/Images/Imoji.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
     </children>
 
 </AnchorPane>

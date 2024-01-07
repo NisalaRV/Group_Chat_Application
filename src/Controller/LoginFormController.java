@@ -8,9 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
@@ -34,8 +32,8 @@ public class LoginFormController {
         Stage stage = new Stage();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Chat with Play Tech");
-        stage.getIcons().add(new Image("Assets/Images/AppIcon.png"));
+        stage.setTitle("");
+        stage.getIcons().add(new Image("Assets/Images/AppIcon3.png"));
         stage.centerOnScreen();
         stage.setResizable(false);
         stage.show();

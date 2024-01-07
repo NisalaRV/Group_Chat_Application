@@ -12,8 +12,8 @@ public class Login extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("View/LoginForm.fxml"))));
-        primaryStage.setTitle("Chat with Play Tech");
-        primaryStage.getIcons().add(new Image("Assets/Images/AppIcon.png"));
+        primaryStage.setTitle("");
+        primaryStage.getIcons().add(new Image("Assets/Images/AppIcon3.png"));
         primaryStage.centerOnScreen();
         primaryStage.setResizable(false);
         primaryStage.show();
